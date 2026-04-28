@@ -1,0 +1,45 @@
+--------------------------------------
+- Real microservices architecture;
+- Real-time notifications;
+- OAuth2 security;
+- Docker deployment;
+--------------------------------------
+Three Powerfull Phases 
+1. Backend Foundations
+	Master Spring Boot
+	- Build REST APIs
+	- Work with JPA
+	- Design database 
+	- JWT authentication
+(Real backend systems - not just code writing)
+2. Frotend Development
+	Master React
+	- Components & state
+	- Redux management
+	- Routing systems
+	- API integration
+(Build a clean, modern UI that communicates seamlessly with your backend)
+3. Production Project 
+	Everything comes together
+	- Full Architecture 
+	(Microservices, database desgin, API contracts)
+	- Real Features 
+	(notifications, user roles, bookings)
+	- Production Ready 
+	(Security, testing, deployment, documentation)
+---------------------------------------------------------------------------
+Salon Booking Platform 
+1. Customer Portal (Browsse, book)
+2. Salon Dashboard (Manage service)
+3. Admin Panel (System control)
+---------------------------------------
+Architecture: Microservices Design
+- User Service
+- Salon Service 
+- Booking Service
+- Payment Service |? 
+- Notification Service 
+- Review Service 
+- Category Service
+- Service Offering Service 
+- API Gateway
