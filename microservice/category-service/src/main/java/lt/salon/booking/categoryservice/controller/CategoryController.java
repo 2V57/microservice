@@ -5,6 +5,7 @@ import lt.salon.booking.categoryservice.modal.Category;
 import lt.salon.booking.categoryservice.service.CategoryService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,9 +18,15 @@ public class CategoryController {
 
     private final CategoryService categoryService;
 
-    @GetMapping("/salon/{id}")
-    public ResponseEntity<Set<Category>> getCategoriesBySalon(){
+    @GetMapping("/salons/{id}")
+    public ResponseEntity<Set<Category>> getCategoriesBySalon(@PathVariable Long id){
+        Set<Category> categories = categoryService.getCategoryByIdSalon(id);
+        return ResponseEntity.ok(categories);
+    }
 
-        return null;
+    @GetMapping("/{id}")
+    public ResponseEntity<Category> getCategoryById(@PathVariable Long id) throws Exception {
+        Category category = categoryService.getCategoryById(id);
+        return ResponseEntity.ok(category);
     }
 }
